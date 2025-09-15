@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>World Digital Clock</h1>
+            <div class="controls">
+                <button id="format-toggle" class="toggle-btn">Switch to 24H</button>
+            </div>
+        </header>
+        
+        <main class="clock-grid">
+            <div class="clock-item" data-timezone="UTC">
+                <div class="timezone-label">
+                    <h3>UTC</h3>
+                    <span class="timezone-name">Coordinated Universal Time</span>
+                </div>
+                <div class="time-display" id="time-UTC">--:--:--</div>
+                <div class="date-display" id="date-UTC">----/--/--</div>
+            </div>
+            
+            <div class="clock-item" data-timezone="EST">
+                <div class="timezone-label">
+                    <h3>EST/EDT</h3>
+                    <span class="timezone-name">Eastern Time</span>
+                </div>
+                <div class="time-display" id="time-EST">--:--:--</div>
+                <div class="date-display" id="date-EST">----/--/--</div>
+            </div>
+            
+            <div class="clock-item" data-timezone="PST">
+                <div class="timezone-label">
+                    <h3>PST/PDT</h3>
+                    <span class="timezone-name">Pacific Time</span>
+                </div>
+                <div class="time-display" id="time-PST">--:--:--</div>
+                <div class="date-display" id="date-PST">----/--/--</div>
+            </div>
+            
+            <div class="clock-item" data-timezone="GMT">
+                <div class="timezone-label">
+                    <h3>GMT</h3>
+                    <span class="timezone-name">Greenwich Mean Time</span>
+                </div>
+                <div class="time-display" id="time-GMT">--:--:--</div>
+                <div class="date-display" id="date-GMT">----/--/--</div>
+            </div>
+            
+            <div class="clock-item" data-timezone="JST">
+                <div class="timezone-label">
+                    <h3>JST</h3>
+                    <span class="timezone-name">Japan Standard Time</span>
+                </div>
+                <div class="time-display" id="time-JST">--:--:--</div>
+                <div class="date-display" id="date-JST">----/--/--</div>
+            </div>
+            
+            <div class="clock-item" data-timezone="CET">
+                <div class="timezone-label">
+                    <h3>CET/CEST</h3>
+                    <span class="timezone-name">Central European Time</span>
+                </div>
+                <div class="time-display" id="time-CET">--:--:--</div>
+                <div class="date-display" id="date-CET">----/--/--</div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Real-time world clock displaying major time zones</p>
+            <p class="last-updated">Last updated: <span id="last-update">--:--:--</span></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
