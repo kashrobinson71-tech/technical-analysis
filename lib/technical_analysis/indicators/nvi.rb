@@ -63,10 +63,10 @@ module TechnicalAnalysis
       output << NviValue.new(date_time: prev_price[:date_time], nvi: nvi_cumulative) # Start with default of 1_000
 
       data.each do |v|
-        volume_change = ((v[:volume] - prev_price[:volume]) / prev_price[:volume])
+        volume_change = ((v[:volume] - prev_price[:volume]).to_f / prev_price[:volume])
 
         if volume_change < 0
-          price_change = ((v[:close] - prev_price[:close]) / prev_price[:close]) * 100.00
+          price_change = ((v[:close] - prev_price[:close]).to_f / prev_price[:close]) * 100.00
           nvi_cumulative += price_change
         end
 
