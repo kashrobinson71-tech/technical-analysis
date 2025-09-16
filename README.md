@@ -28,6 +28,7 @@ The following technical indicators are supported:
 - Negative Volume Index (NVI)
 - On-balance Volume (OBV)
 - On-balance Volume Mean (OBV_MEAN)
+- Positive Volume Index (PVI)
 - Relative Strength Index (RSI)
 - Simple Moving Average (SMA)
 - Stochastic Oscillator (SR)
