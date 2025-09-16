@@ -41,6 +41,7 @@ module TechnicalAnalysis
         TechnicalAnalysis::Nvi,
         TechnicalAnalysis::Obv,
         TechnicalAnalysis::ObvMean,
+        TechnicalAnalysis::Pvi,
         TechnicalAnalysis::Rsi,
         TechnicalAnalysis::Sma,
         TechnicalAnalysis::Sr,
@@ -50,6 +51,7 @@ module TechnicalAnalysis
         TechnicalAnalysis::Vi,
         TechnicalAnalysis::Vpt,
         TechnicalAnalysis::Vwap,
+        TechnicalAnalysis::Wma,
         TechnicalAnalysis::Wr,
       ]
     end
@@ -80,6 +82,7 @@ module TechnicalAnalysis
         TechnicalAnalysis::Nvi.indicator_symbol => TechnicalAnalysis::Nvi,
         TechnicalAnalysis::Obv.indicator_symbol => TechnicalAnalysis::Obv,
         TechnicalAnalysis::ObvMean.indicator_symbol => TechnicalAnalysis::ObvMean,
+        TechnicalAnalysis::Pvi.indicator_symbol => TechnicalAnalysis::Pvi,
         TechnicalAnalysis::Rsi.indicator_symbol => TechnicalAnalysis::Rsi,
         TechnicalAnalysis::Sma.indicator_symbol => TechnicalAnalysis::Sma,
         TechnicalAnalysis::Sr.indicator_symbol => TechnicalAnalysis::Sr,
@@ -89,6 +92,7 @@ module TechnicalAnalysis
         TechnicalAnalysis::Vi.indicator_symbol => TechnicalAnalysis::Vi,
         TechnicalAnalysis::Vpt.indicator_symbol => TechnicalAnalysis::Vpt,
         TechnicalAnalysis::Vwap.indicator_symbol => TechnicalAnalysis::Vwap,
+        TechnicalAnalysis::Wma.indicator_symbol => TechnicalAnalysis::Wma,
         TechnicalAnalysis::Wr.indicator_symbol => TechnicalAnalysis::Wr,
       }
     end
